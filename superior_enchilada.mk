@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from enchilada device
 $(call inherit-product, device/oneplus/enchilada/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common superiorOS stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Official
-CUSTOM_BUILD_TYPE := OFFICIAL
+#CUSTOM_BUILD_TYPE := OFFICIAL
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -34,7 +34,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
 
-PRODUCT_NAME := aosp_enchilada
+PRODUCT_NAME := superior_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
